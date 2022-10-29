@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "1efbc28e-eb7e-4c68-83dd-159280f828c6",
+		"name": "SpringBootRestApiTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15718297"
+	},
+	"item": [
+		{
+			"name": "AddCourse",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 333,\r\n        \"title\": \"Django\",\r\n        \"description\": \"Python framework\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:69/courses/",
+					"host": [
+						"localhost"
+					],
+					"port": "69",
+					"path": [
+						"courses",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCourseList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:69/courses/",
+					"host": [
+						"localhost"
+					],
+					"port": "69",
+					"path": [
+						"courses",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSingleCourse",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:7002/courses/555",
+					"host": [
+						"localhost"
+					],
+					"port": "7002",
+					"path": [
+						"courses",
+						"555"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateCourse",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 555,\r\n        \"title\": \"SpringBoot\",\r\n        \"description\": \"Shikhte Ashbe Ahsanul Bari Romi\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:7002/courses/555",
+					"host": [
+						"localhost"
+					],
+					"port": "7002",
+					"path": [
+						"courses",
+						"555"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteCourse",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:7002/courses/555",
+					"host": [
+						"localhost"
+					],
+					"port": "7002",
+					"path": [
+						"courses",
+						"555"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
