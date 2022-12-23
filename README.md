@@ -24,11 +24,11 @@ SELECT =>
 	iii) Select a spring boot version
 	
 Project Metadata
-	i) Group -> com.springrest
-	ii) Artifact -> springrest
+	i) Group -> com.springbootrest
+	ii) Artifact -> springbootrest
 	iii) Name -> springrest
 	iv) Description -> Demo project for spring boot
-	v) Package name -> com.springrest.springrest 
+	v) Package name -> com.springbootrest.springrest 
 	
 	vi) Packaging -> jar
 	java -> 8
