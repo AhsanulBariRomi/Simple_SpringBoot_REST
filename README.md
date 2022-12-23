@@ -8,3 +8,35 @@
 7. You need a client to test the API. Just import {Postmanfile.json} in your postman.
 
 8. After understanding the basic flow as a beginner we will move to Database connection with the project. We will use Oracle DB. That project will be im another repository. 
+
+
+
+If someone needs to start from scratch instead of opening this project ==> 
+
+First create a basic structure for spring boot project => 
+Whatever configuration I used for this project is mentioned bellow: 
+
+Google --> Spring boot initializr
+
+SELECT => 
+	i) Maven Project
+	ii) Java
+	iii) Select a spring boot version
+	
+Project Metadata
+	i) Group -> com.springrest
+	ii) Artifact -> springrest
+	iii) Name -> springrest
+	iv) Description -> Demo project for spring boot
+	v) Package name -> com.springrest.springrest 
+	
+	vi) Packaging -> jar
+	java -> 8
+
+Add dependencies => 
+		i) Spring web
+		ii) Oracle sql driver
+		iii) Spring data jpa
+		
+===> Generate Project <===
+They'll provide a jar. Extract it and open it in your IDE as a Maven Project
